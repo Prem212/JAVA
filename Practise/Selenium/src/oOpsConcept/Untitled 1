@@ -1,0 +1,14 @@
+int a[] = {1,2,3,4};
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+		//	sum = sum+a[i];
+			
+			if(3==a[i]) {
+				System.out.println(i);
+				break;
+			}
+			
+		}
+		//System.out.println(sum);
+		
+#########################################################################
