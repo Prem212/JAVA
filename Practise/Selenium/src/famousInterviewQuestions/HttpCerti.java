@@ -19,6 +19,9 @@ public class HttpCerti {
 //To set you local browser		
 		ChromeOptions c = new ChromeOptions();
 		c.merge(ch);												//Merging the set capabilities to ur local
+	
+		//	c.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true); this line is also possible from options
+	
 		
 	
 

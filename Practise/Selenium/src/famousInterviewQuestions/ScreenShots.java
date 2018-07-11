@@ -23,6 +23,11 @@ public class ScreenShots {
 		dc.setPlatform(Platform.WINDOWS);
 		
 		WebDriver driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"),dc);
+		
+		we also can pass options instead of dc like below as its been told that it has been depreciated.
+		ChromeOptions options = new ChromeOptions();
+		options.merge(dc)
+		WebDriver driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"),options);
 	*/	
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Work\\chromedriver.exe");
