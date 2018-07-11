@@ -9,6 +9,7 @@ public class Arraylis {
 		li.add(3);
 		li.add(20);
 		li.add(30);
+		
 
 		System.out.println(li.get(0));
 
