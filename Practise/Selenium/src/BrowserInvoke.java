@@ -1,11 +1,18 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BrowserInvoke {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","C:\\Work\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		
+		ChromeOptions c = new ChromeOptions();
+		c.addArguments("disable-infobars");			// disabling the info "'Chrome is being controlled by automated test software'
+		c.addArguments("user-data--dir=C://Users//username//AppData//Local//Google//Chrome//User Data//Profile 1");	// using chrome profile
+		
+		
+		WebDriver driver = new ChromeDriver(c);
 		driver.get("http://google.com");
 		System.out.println(driver.getTitle());
 		driver.get("http://yahoo.com");

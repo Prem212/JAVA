@@ -1,1 +1,2 @@
-MavenTest\TestMaven\App.class
+com\info\pages\LoginPage.class
+com\info\pages\HomePage.class
