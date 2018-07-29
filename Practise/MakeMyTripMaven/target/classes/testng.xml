@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MakeMyTrip Test Automation Test Suite">
+	<test name="MakeMyTrip Test Cases">
+		<classes>
+			<class name="com.mmt.qa.testcases.HomePageTest" />
+			<class name="com.mmt.qa.testcases.LoginPageTest" />
+		</classes>
+	</test> <!-- MakeMyTrip Test Cases -->
+</suite> <!-- MakeMyTrip Test Automation Test Suite -->
